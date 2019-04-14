@@ -6,19 +6,10 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:onClick="jumpToThreadActivity"
-        android:text="创建线程的三种方式"/>
-
-    <Button
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:onClick="jumpToThreadPoolActivity"
-        android:text="四种线程池的使用"/>
+        android:text="please see log"/>
 
 </LinearLayout>
