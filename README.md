@@ -2,7 +2,10 @@
 本人多年的 Android 笔记，既有基础知识，也有深度好文！持续更新中...
 
 ## 源码分析
-- [面试时最常问到的Handler消息机制源码详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/SourceAnalysis/%E9%9D%A2%E8%AF%95%E6%97%B6%E6%9C%80%E5%B8%B8%E9%97%AE%E5%88%B0%E7%9A%84Handler%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md) 
+- [面试时最常问到的Handler消息机制源码详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E9%9D%A2%E8%AF%95%E6%97%B6%E6%9C%80%E5%B8%B8%E9%97%AE%E5%88%B0%E7%9A%84Handler%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md) 
+
+## Java 并发
+- [带你通俗易懂的理解——线程、多线程与线程池](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E5%B8%A6%E4%BD%A0%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%94%E2%80%94%E7%BA%BF%E7%A8%8B%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0.md) 
 
 
 ## 为什么要创建该仓库？
