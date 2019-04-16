@@ -64,14 +64,14 @@ Handler最常用的用法，即子线程完成耗时任务然后通知主线程�
 ```
 果然程序就能正常运行了。玄机就藏在源码当中！
 
-首先我们点击我们创建的Handler进去源码是这样的：
+首先我们点击我们创建的Handler进去源码是这样的：  
 【Handler.java】
 ```
     public Handler() {
         this(null, false);
     }
 ```
-然后再跟到这个构造方法里，发现是走了有参构造
+然后再跟到这个构造方法里，发现是走了有参构造  
 【Handler.java】
 ```
     public Handler(Callback callback, boolean async) {
@@ -93,14 +93,14 @@ Handler最常用的用法，即子线程完成耗时任务然后通知主线程�
         mAsynchronous = async;
     }
 ```
-可以看到，在第13行抛出的异常错误刚好就是我们刚刚上面报的错误！报错的原因是mLooper对象为空了，而mLooper对象则是在第10行代码中获取的，接下来我们点进去看看myLooper()这个方法，如下：
+可以看到，在第13行抛出的异常错误刚好就是我们刚刚上面报的错误！报错的原因是mLooper对象为空了，而mLooper对象则是在第10行代码中获取的，接下来我们点进去看看myLooper()这个方法，如下：  
 【Looper.java】
 ```
     public static Looper myLooper() {
         return sThreadLocal.get();
     }
 ```
-可以看到，mLooper对象是通过sThreadLocal的get()方法获取的。由此可以联想到应该是有sThreadLocal.set()方法设置了mLooper对象。在当前类中查找，果然找到了。如下：
+可以看到，mLooper对象是通过sThreadLocal的get()方法获取的。由此可以联想到应该是有sThreadLocal.set()方法设置了mLooper对象。在当前类中查找，果然找到了。如下：  
 【Looper.java】
 
 ```
@@ -115,7 +115,7 @@ Handler最常用的用法，即子线程完成耗时任务然后通知主线程�
 
 但是但是！为什么在主线程中创建Handler之前就不用调用Looper.prepare() 呢？？
 查找资料发现，Android程序的入口中，系统就默认帮我们调用了Looper.prepare()方法。
-Android程序的入口在ActivityThread中的main()方法，ActivityThread这个类在Android studio中是看不到的，只能利用工具source insight来看。代码如下：
+Android程序的入口在ActivityThread中的main()方法，ActivityThread这个类在Android studio中是看不到的，只能利用工具source insight来看。代码如下：  
 【ActivityThread.java】
 ```
 public static void main(String[] args) {
@@ -139,7 +139,7 @@ public static void main(String[] args) {
 }
 ```
 可以看到，在第7行调用了Looper.prepareMainLooper()方法，跟进去，prepareMainLooper()方法中又调用了prepare()方法
-【ActivityThread.java】
+【ActivityThread.java】  
 ```
 public static final void prepareMainLooper() {
     prepare();
@@ -154,7 +154,7 @@ public static final void prepareMainLooper() {
 接下来Handler的有参构造就只剩下面三行了。
 
 ```
-		mQueue = mLooper.mQueue;
+	mQueue = mLooper.mQueue;
         mCallback = callback;
         mAsynchronous = async;
 ```
@@ -163,7 +163,7 @@ public static final void prepareMainLooper() {
 ### 小总结：主线程中可以直接创建Handler，在子线程中需要先调用Looper.prepare()才能创建Handler。Handler的构造方法中主要是获取轮询器（即Looper对象）和消息队列（即MessageQueue对象）。
 
 ## 二、发送消息----mHandler.sendMessage(message);
-点击sendMessage()方法进去，如下：
+点击sendMessage()方法进去，如下：  
 【Handler.java】
 ```
     public final boolean sendMessage(Message msg)
@@ -171,7 +171,7 @@ public static final void prepareMainLooper() {
         return sendMessageDelayed(msg, 0);
     }
 ```
-可以看到，调用了sendMessageDelayed()方法，点进去，如下：
+可以看到，调用了sendMessageDelayed()方法，点进去，如下：  
 【Handler.java】
 ```
     public final boolean sendMessageDelayed(Message msg, long delayMillis)
@@ -182,7 +182,7 @@ public static final void prepareMainLooper() {
         return sendMessageAtTime(msg, SystemClock.uptimeMillis() + delayMillis);
     }
 ```
-可以看到，delayMillis < 0判断是为了防止用户传入的延迟参数为负数。之后又调用了sendMessageAtTime()方法，点进去，如下：
+可以看到，delayMillis < 0判断是为了防止用户传入的延迟参数为负数。之后又调用了sendMessageAtTime()方法，点进去，如下：  
 【Handler.java】
 ```
     public boolean sendMessageAtTime(Message msg, long uptimeMillis) {
@@ -199,7 +199,7 @@ public static final void prepareMainLooper() {
 可以看到，我们代码中调用sendMessage()方法，最终就是走的sendMessageAtTime()方法。
 而且其他发送消息的方法除了sendMessageAtFrontOfQueue(),例如sendMessageDelayed()，sendEmptyMessageDelayed()最终都会走sendMessageAtTime()方法。
 
-sendMessageAtTime()方法接收两个参数，其中msg参数就是我们发送的Message对象，而uptimeMillis参数则表示发送消息的时间，它的值等于自系统开机到当前时间的毫秒数再加上延迟时间，如果你调用的不是sendMessageDelayed()方法，延迟时间就为0。第二行中的mQueue则是我们在创建Handler的时候获取的消息队列，然后将这三个参数都传递到enqueueMessage()方法中。
+sendMessageAtTime()方法接收两个参数，其中msg参数就是我们发送的Message对象，而uptimeMillis参数则表示发送消息的时间，它的值等于自系统开机到当前时间的毫秒数再加上延迟时间，如果你调用的不是sendMessageDelayed()方法，延迟时间就为0。第二行中的mQueue则是我们在创建Handler的时候获取的消息队列，然后将这三个参数都传递到enqueueMessage()方法中。  
 【Handler.java】
 ```
     private boolean enqueueMessage(MessageQueue queue, Message msg, long uptimeMillis) {
@@ -213,7 +213,7 @@ sendMessageAtTime()方法接收两个参数，其中msg参数就是我们发送�
 可以看到，enqueueMessage()方法中，首先将当前的Handler绑定给msg.target，接着调用MessageQueue的enqueueMessage()方法
 
 
-MessageQueue的enqueueMessage()方法则是消息入队的方法，点击进去，如下：
+MessageQueue的enqueueMessage()方法则是消息入队的方法，点击进去，如下：  
 【MessageQueue.java】
 ```
     boolean enqueueMessage(Message msg, long when) {
@@ -275,7 +275,7 @@ MessageQueue的enqueueMessage()方法则是消息入队的方法，点击进去�
 ### 小总结：发送消息的方法除了sendMessageAtFrontOfQueue(),例如sendMessage()，sendMessageDelayed()最终都会走sendMessageAtTime()方法。在sendMessageAtTime()方法中又调用MessageQueue的enqueueMessage()方法将所有的消息按时间来进行排序放在消息队列中。
 
 ### 三、处理消息----Looper.loop()
-消息发送完成并且也已经入队列了，接下来我们就是处理消息队列中的消息了。首先要从队列中取出消息，取消息主要靠轮询器，看Looper.loop()方法
+消息发送完成并且也已经入队列了，接下来我们就是处理消息队列中的消息了。首先要从队列中取出消息，取消息主要靠轮询器，看Looper.loop()方法  
 【Looper.java】
 ```
     public static void loop() {
@@ -337,7 +337,7 @@ MessageQueue的enqueueMessage()方法则是消息入队的方法，点击进去�
 ```
 可以看到，代码第6行，从轮询器中获取消息队列。接着通过一个死循环来把消息队列中的消息逐个取出来。代码第14行，通过MessageQueue的next()方法取出消息，当queue.next返回null时会退出消息循环。有消息则调用msg.target.dispatchMessage(msg)，target就是发送message时跟message关联的handler，Message被处理后会被调用recycleUnchecked()进行回收。
 
-接下来看看MessageQueue的next()方法
+接下来看看MessageQueue的next()方法  
 【MessageQueue.java】
 ```
     Message next() {
@@ -449,7 +449,7 @@ MessageQueue的enqueueMessage()方法则是消息入队的方法，点击进去�
 
 大概意思是如果当前MessageQueue中存在mMessages就将这个消息取出来，标记为已用并从消息队列中移除该消息，然后让下一条消息成为mMessages，否则就进入一个阻塞状态，一直等到有新的消息入队。
 
-接下来看看Handler的dispatchMessage()方法
+接下来看看Handler的dispatchMessage()方法  
 【Handler.java】
 
 ```
@@ -468,18 +468,18 @@ MessageQueue的enqueueMessage()方法则是消息入队的方法，点击进去�
 ```
 可以看到，第2行进行判断，如果msg.callback不为空，则调用handleCallback(msg);方法，否则直接调用Handler的handleMessage()方法。这里的handleMessage()方法是不是很熟悉？没错！就是我们在主线程中处理消息的handleMessage()方法。
 
-接下来看看Handler的handleCallback()方法
+接下来看看Handler的handleCallback()方法  
 【Handler.java】
 ```
 	private static void handleCallback(Message message) {
-        message.callback.run();
-    }
+        	message.callback.run();
+    	}
 ```
 可以看到，处理消息是在run方法中，即Runnable对象的run方法，也就是我们不用最常用的方法使用handle，而是以callback的方式使用。如下：
 
 ```
-		//1，创建Handler（主线程）
-		 Handler mHandler = new Handler();
+	//1，创建Handler（主线程）
+	Handler mHandler = new Handler();
 
         new Thread(new Runnable() {
             @Override
