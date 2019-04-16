@@ -3,13 +3,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="please see log"/>
+        style="@style/CommonTextView"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="操作反馈请看 Log"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="myThread"
+        android:text="继承Thread的方式创建线程"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="myRunnable"
+        android:text="实现Runnable的方式创建线程"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="myCallable"
+        android:text="实现Callable的方式创建线程"/>
 
 </LinearLayout>

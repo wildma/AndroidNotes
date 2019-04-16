@@ -1,26 +1,29 @@
 package com.wildma.androidnotes;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 
-import com.wildma.androidnotes.thread.ThreadActivity;
-import com.wildma.androidnotes.thread.ThreadPoolActivity;
+import com.wildma.androidnotes.base.BaseActivity;
+import com.wildma.androidnotes.thread.AboutThreadActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int initLayoutId() {
+        return R.layout.activity_main;
     }
 
-    public void jumpToThreadActivity(View view) {
-        startActivity(new Intent(this, ThreadActivity.class));
+    @Override
+    protected void initView() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
     }
 
-    public void jumpToThreadPoolActivity(View view) {
-        startActivity(new Intent(this, ThreadPoolActivity.class));
+    @Override
+    protected void initPresenter() {
     }
+
+    public void jumpToAboutThreadActivity(View view) {
+        startActivity(new Intent(this, AboutThreadActivity.class));
+    }
+
 }

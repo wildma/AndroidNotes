@@ -1,10 +1,10 @@
 package com.wildma.androidnotes.thread;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 import com.wildma.androidnotes.R;
+import com.wildma.androidnotes.base.BaseActivity;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -17,20 +17,32 @@ import java.util.concurrent.Future;
  * Date         2017/10/5
  * Desc	        ${创建线程的三种方式demo}
  */
-public class ThreadActivity extends AppCompatActivity {
-
-    private final String TAG = this.getClass().getName();
-
+public class ThreadActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thread);
-        getSupportActionBar().setTitle("创建线程的三种方式");
+    protected int initLayoutId() {
+        return R.layout.activity_thread;
+    }
 
+    @Override
+    protected void initView() {
+        setTitle("创建线程的三种方式");
+    }
+
+    @Override
+    protected void initPresenter() {
+    }
+
+    public void myThread(View view) {
         myThread();
-        //        myRunnable();
-        //        myCallable();
+    }
+
+    public void myRunnable(View view) {
+        myRunnable();
+    }
+
+    public void myCallable(View view) {
+        myCallable();
     }
 
     /**
@@ -70,7 +82,6 @@ public class ThreadActivity extends AppCompatActivity {
         //关闭线程池
         pool.shutdown();
     }
-
 
     //1、定义一个类MyThread继承Thread，并重写run方法。
     class MyThread extends Thread {

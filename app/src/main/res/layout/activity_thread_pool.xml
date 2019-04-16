@@ -3,13 +3,34 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="please see log"/>
+        style="@style/CommonTextView"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="操作反馈请看 Log"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="newFixedThreadPool"
+        android:text="创建固定大小的线程池"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="newSingleThreadExecutor"
+        android:text="创建单线程的线程池"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="newCachedThreadPool"
+        android:text="创建带有缓存的线程池"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="newScheduledThreadPool"
+        android:text="创建定时和周期性执行的线程池"/>
 
 </LinearLayout>

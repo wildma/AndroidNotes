@@ -1,10 +1,10 @@
 package com.wildma.androidnotes.thread;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 import com.wildma.androidnotes.R;
+import com.wildma.androidnotes.base.BaseActivity;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -16,22 +16,38 @@ import java.util.concurrent.TimeUnit;
  * Date         2017/10/6
  * Desc	        ${四种线程池的使用demo}
  */
-public class ThreadPoolActivity extends AppCompatActivity {
+public class ThreadPoolActivity extends BaseActivity {
 
-    private final String          TAG = this.getClass().getSimpleName();
-    private       ExecutorService mNewFixedThreadPool;
+    private ExecutorService mNewFixedThreadPool;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thread_pool);
-        getSupportActionBar().setTitle("四种线程池的使用");
+    protected int initLayoutId() {
+        return R.layout.activity_thread_pool;
+    }
 
+    @Override
+    protected void initView() {
+        setTitle("四种线程池的使用");
+    }
+
+    @Override
+    protected void initPresenter() {
+    }
+
+    public void newFixedThreadPool(View view) {
         newFixedThreadPool();
-        //        newSingleThreadExecutor();
-        //        newCachedThreadPool();
-        //        newScheduledThreadPool();
+    }
 
+    public void newSingleThreadExecutor(View view) {
+        newSingleThreadExecutor();
+    }
+
+    public void newCachedThreadPool(View view) {
+        newCachedThreadPool();
+    }
+
+    public void newScheduledThreadPool(View view) {
+        newScheduledThreadPool();
     }
 
     /**
@@ -126,4 +142,5 @@ public class ThreadPoolActivity extends AppCompatActivity {
             mNewFixedThreadPool.shutdownNow();//关闭线程池
         }
     }
+
 }
