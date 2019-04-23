@@ -7,6 +7,10 @@
 ## Java 并发
 - [带你通俗易懂的理解——线程、多线程与线程池](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E5%B8%A6%E4%BD%A0%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%94%E2%80%94%E7%BA%BF%E7%A8%8B%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0.md) 
 
+## 设计模式
+- [设计模式简介与六大原则](https://github.com/wildma/AndroidNotes/blob/master/blogs/DesignMode/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%AE%80%E4%BB%8B%E4%B8%8E%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99.md)
+- [单例模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/DesignMode/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
+
 
 ## 为什么要创建该仓库？
 我是一名 Android 开发者，从事 Android 开发这几年也有记笔记和写博客的习惯，但是博客的产量远远追不上记笔记的量，导致为知笔记里的笔记越来越多，而且都比较凌乱，最近一直想着抽个时间整理出来，所以就有了这个仓库。很多看过我博客的读者都说我写的文章通俗易懂，所以我会将笔记中的每个知识点整理成一篇篇文章，必要的还会配上 demo，而不是纯粹只是为了粘贴笔记，目的是为了大家能更好的理解。当然，也是为了以后自己能快速复习。如果对你有帮助，可以点个 star 收藏起来，我会持续更新的~
