@@ -1,11 +1,15 @@
 # AndroidNotes
 本人多年的 Android 笔记，既有基础知识，也有深度好文！持续更新中...
 
+## 适配相关
+- [Android 屏幕适配](https://www.jianshu.com/p/1302ad5a4b04)
+- [Android 字体大小适配](https://www.jianshu.com/p/2fdc97ae74a8)
+
 ## 源码分析
-- [面试时最常问到的Handler消息机制源码详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E9%9D%A2%E8%AF%95%E6%97%B6%E6%9C%80%E5%B8%B8%E9%97%AE%E5%88%B0%E7%9A%84Handler%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md) 
+- [Handler 消息机制源码详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E9%9D%A2%E8%AF%95%E6%97%B6%E6%9C%80%E5%B8%B8%E9%97%AE%E5%88%B0%E7%9A%84Handler%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md) 
 
 ## Java 并发
-- [带你通俗易懂的理解——线程、多线程与线程池](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E5%B8%A6%E4%BD%A0%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%94%E2%80%94%E7%BA%BF%E7%A8%8B%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0.md) 
+- [线程、多线程与线程池](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E5%B8%A6%E4%BD%A0%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%94%E2%80%94%E7%BA%BF%E7%A8%8B%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0.md) 
 
 ## 设计模式
   - [设计模式概括](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#%E4%B8%80%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%A6%82%E6%8B%AC) 
