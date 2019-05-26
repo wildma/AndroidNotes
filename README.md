@@ -19,6 +19,10 @@
  - [工厂方法模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#2-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F)
  - [抽象工厂模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#3-%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F)
  - [模板方法模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#4-%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F)
+  - [建造者模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#5-%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F)
+  - [代理模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#6-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F)
+  - [装饰模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#7-%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F)
+  - [适配器模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#8-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F)
 
 
 ## 为什么要创建该仓库？
