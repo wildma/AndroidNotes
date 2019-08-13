@@ -2,6 +2,8 @@
 <manifest package="com.wildma.androidnotes"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!--解决 Android 9.0 使用 HttpClient
+        报错 ClassNotFoundException: Didn't find class "org.apache.http.impl.client.DefaultHttpClient 的问题-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -24,6 +33,9 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".thread.AboutThreadActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".http.HttpActivity"
             android:screenOrientation="portrait"/>
     </application>
 

@@ -20,6 +20,9 @@ android {
     lintOptions {
         disable 'GoogleAppIndexingWarning'//禁止 AS 出现 App is not indexable by Google Search 警告
     }
+
+    //HttpClient
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {

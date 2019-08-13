@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.wildma.androidnotes.base.BaseActivity;
+import com.wildma.androidnotes.http.HttpActivity;
 import com.wildma.androidnotes.thread.AboutThreadActivity;
 
 public class MainActivity extends BaseActivity {
@@ -24,6 +25,10 @@ public class MainActivity extends BaseActivity {
 
     public void jumpToAboutThreadActivity(View view) {
         startActivity(new Intent(this, AboutThreadActivity.class));
+    }
+
+    public void jumpToHttpActivity(View view) {
+        startActivity(new Intent(this, HttpActivity.class));
     }
 
 }
