@@ -247,4 +247,5 @@ POST 请求与 GET 请求类似，不同的是需要将请求方法 GET 换成 P
 
 
 
-**HttpClient 与 HttpURLConnection 的使用 demo：**[http](https://github.com/wildma/AndroidNotes/tree/master/app/src/main/java/com/wildma/androidnotes/http)
+# 6 源码
+[http](https://github.com/wildma/AndroidNotes/tree/master/app/src/main/java/com/wildma/androidnotes/http)
