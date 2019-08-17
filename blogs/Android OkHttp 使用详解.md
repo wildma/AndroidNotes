@@ -321,4 +321,4 @@ OkHttpActivity: onFailure IOException-->java.io.IOException: Canceled
 第一行说明取消成功了，第二行说明一个线程正在写请求或读响应，这时候会走到 onFailure() 方法并收到一个 IOException 异常。
 
 # 3 源码
-[OkHttp 的使用 Demo]()
+[OkHttp 的使用 Demo](https://github.com/wildma/AndroidNotes/tree/master/app/src/main/java/com/wildma/androidnotes/okhttp)
