@@ -1,3 +1,5 @@
+# HttpClient 与 HttpURLConnection 使用详解
+
 # 1 前言
 开发一个 Android 应用必不可少的就是网络通信，而网络通信一般都会使用 HTTP 协议来发送和接收网络数据，在 Android 中可以通过 HttpClient 或 HttpURLConnection 来操作 HTTP，这两种方式都支持 HTTPS 协议，以流的形式进行上传和下载，配置超时时间，IPV6，连接池等功能。
 
@@ -248,4 +250,4 @@ POST 请求与 GET 请求类似，不同的是需要将请求方法 GET 换成 P
 
 
 # 6 源码
-[http](https://github.com/wildma/AndroidNotes/tree/master/app/src/main/java/com/wildma/androidnotes/http)
+[HttpClient 与 HttpURLConnection 的使用 demo](https://github.com/wildma/AndroidNotes/tree/master/app/src/main/java/com/wildma/androidnotes/http)
