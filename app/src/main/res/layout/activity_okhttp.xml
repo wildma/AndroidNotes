@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16">
+
+        <TextView
+            style="@style/CommonTextView"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="操作反馈请看 Log"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="syncGetRequestByOkHttp"
+            android:text="同步 GET 请求"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="asyncGetRequestByOkHttp"
+            android:text="异步 GET 请求"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="asyncPostRequestByOkHttp"
+            android:text="异步 POST 请求"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="asyncPostFileByOkHttp"
+            android:text="异步 POST 方式上传文件"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="asyncPostMultipartRequestByOkHttp"
+            android:text="异步 POST multipart 请求"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="asyncGetRequestByOkHttpAndSetTimeout"
+            android:text="异步 GET 请求并设置超时时间"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="asyncGetRequestByOkHttpAndCancelRequest"
+            android:text="异步 GET 请求的同时并马上取消请求"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

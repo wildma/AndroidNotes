@@ -21,6 +21,11 @@
             android:onClick="jumpToHttpActivity"
             android:text="HttpClient 与 HttpURLConnection 的使用"/>
 
+        <Button
+            style="@style/CommonButton"
+            android:onClick="jumpToOkHttpActivity"
+            android:text="OkHttp 的使用"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
