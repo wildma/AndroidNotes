@@ -23,7 +23,7 @@ OkHttp 是 Square 公司开源的网络框架，可以说是当前 Android 界�
 2. 添加 OkHttp 库的依赖
 在当前使用的 module 下的 build.gradle 中加入如下：
 ```
-implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+implementation 'com.squareup.okhttp3:okhttp:3.11.0'
 ```
 
 ### 2.2 同步 GET 请求
@@ -39,7 +39,7 @@ implementation 'com.squareup.okhttp3:okhttp:3.4.1'
 
 需要注意的是：
 1. 同步 GET 请求需要在子线程中调用。
-2. string()、bytes() 方法只能调用一次，原因是这两个方法在第一次调用完就关闭了流。
+2. string() 方法只能调用一次，原因是该方法在第一次调用完就关闭了流。
 
 具体代码如下：
 ```
