@@ -9,8 +9,12 @@
 - [Handler 消息机制源码详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E9%9D%A2%E8%AF%95%E6%97%B6%E6%9C%80%E5%B8%B8%E9%97%AE%E5%88%B0%E7%9A%84Handler%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md) 
 
 ## 网络编程
-- [HttpClient 与 HttpURLConnection 使用详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/HttpClient%20%E4%B8%8E%20HttpURLConnection.md) 
-- [Android OkHttp 使用详解](https://github.com/wildma/AndroidNotes/blob/master/blogs/Android%20OkHttp%20%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3.md) 
+- [HttpClient 与 HttpURLConnection 使用详解](https://wildma.github.io/blog/ec018646.html) 
+- [Android OkHttp 使用详解](https://wildma.github.io/blog/6d0008b.html) 
+
+## Android 主流开源框架
+- [Android 主流开源框架（一）OkHttp 铺垫-HttpClient 与 HttpURLConnection 使用详解](https://wildma.github.io/blog/ec018646.html) 
+- [Android 主流开源框架（二）OkHttp 使用详解 ](https://wildma.github.io/blog/6d0008b.html) 
 
 ## Java 并发
 - [线程、多线程与线程池](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E5%B8%A6%E4%BD%A0%E9%80%9A%E4%BF%97%E6%98%93%E6%87%82%E7%9A%84%E7%90%86%E8%A7%A3%E2%80%94%E2%80%94%E7%BA%BF%E7%A8%8B%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0.md) 
@@ -57,7 +61,8 @@
 
 
 ## About me
-- Email：[wildma58@163.com]()
+- Email：[wildma.me@gmail.com]()
+- 个人博客：[wildma的博客](https://wildma.github.io)
 - 简书：[wildma](https://www.jianshu.com/u/03fac4a1b107) 
 
 
