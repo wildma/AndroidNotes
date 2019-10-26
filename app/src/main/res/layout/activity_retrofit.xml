@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_16">
+
+        <TextView
+            style="@style/CommonTextView"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="操作反馈请看 Log"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testGetRequest"
+            android:text="testGetRequest"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testHTTP"
+            android:text="testHTTP"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testFormUrlEncoded1"
+            android:text="testFormUrlEncoded1"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testFormUrlEncoded2"
+            android:text="testFormUrlEncoded2"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testFileUpload1"
+            android:text="testFileUpload1"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testFileUpload2"
+            android:text="testFileUpload2"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testFileDownload"
+            android:text="testFileDownload"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testHeader"
+            android:text="testHeader"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testHeaders"
+            android:text="testHeaders"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testHeaders2"
+            android:text="testHeaders2"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testHeaderMap"
+            android:text="testHeaderMap"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testBody"
+            android:text="testBody"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testQuery"
+            android:text="testQuery"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testQueryMap"
+            android:text="testQueryMap"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testQueryName"
+            android:text="testQueryName"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testPath"
+            android:text="testPath"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testUrl"
+            android:text="testUrl"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testCustomOkHttpClient"
+            android:text="testCustomOkHttpClient"/>
+
+        <Button
+            style="@style/CommonButton"
+            android:onClick="testCallAdapter"
+            android:text="testCallAdapter"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

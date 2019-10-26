@@ -26,6 +26,11 @@
             android:onClick="jumpToOkHttpActivity"
             android:text="OkHttp 的使用"/>
 
+        <Button
+            style="@style/CommonButton"
+            android:onClick="jumpToRetrofitActivity"
+            android:text="Retrofit 的使用"/>
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

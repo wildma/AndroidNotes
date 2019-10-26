@@ -6,6 +6,7 @@ import android.view.View;
 import com.wildma.androidnotes.base.BaseActivity;
 import com.wildma.androidnotes.http.HttpActivity;
 import com.wildma.androidnotes.okhttp.OkHttpActivity;
+import com.wildma.androidnotes.retrofit.RetrofitActivity;
 import com.wildma.androidnotes.thread.AboutThreadActivity;
 
 public class MainActivity extends BaseActivity {
@@ -34,6 +35,10 @@ public class MainActivity extends BaseActivity {
 
     public void jumpToOkHttpActivity(View view) {
         startActivity(new Intent(this, OkHttpActivity.class));
+    }
+
+    public void jumpToRetrofitActivity(View view) {
+        startActivity(new Intent(this, RetrofitActivity.class));
     }
 
 }
