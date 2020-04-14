@@ -5,38 +5,47 @@
 - [Android 屏幕适配](https://www.jianshu.com/p/1302ad5a4b04)
 - [Android 字体大小适配](https://www.jianshu.com/p/2fdc97ae74a8)
 
-## 源码分析
+## 源码解析
 - [Handler 消息机制源码详解](https://wildma.github.io/blog/7be5d111.html) 
+- [Android OkHttp 源码解析 ](https://wildma.github.io/blog/d8540f1f.html) 
+- [Android Retrofit 源码解析 ](https://wildma.github.io/blog/a7a51ec3.html) 
 
 ## 网络编程
 - [HttpClient 与 HttpURLConnection 使用详解](https://wildma.github.io/blog/ec018646.html) 
 - [Android OkHttp 使用详解](https://wildma.github.io/blog/6d0008b.html) 
+- [Android OkHttp 源码解析 ](https://wildma.github.io/blog/d8540f1f.html) 
+- [Android Retrofit 使用详解 ](https://wildma.github.io/blog/df2af467.html) 
+- [Android Retrofit 源码解析 ](https://wildma.github.io/blog/a7a51ec3.html) 
 
 ## Android 主流开源框架
 - [Android 主流开源框架（一）OkHttp 铺垫-HttpClient 与 HttpURLConnection 使用详解](https://wildma.github.io/blog/ec018646.html) 
 - [Android 主流开源框架（二）OkHttp 使用详解 ](https://wildma.github.io/blog/6d0008b.html) 
+- [Android 主流开源框架（三）OkHttp 源码解析 ](https://wildma.github.io/blog/d8540f1f.html) 
+- [Android 主流开源框架（四）Retrofit 使用详解 ](https://wildma.github.io/blog/df2af467.html) 
+- [Android 主流开源框架（五）Retrofit 源码解析 ](https://wildma.github.io/blog/a7a51ec3.html) 
 
 ## Java 并发
 - [线程、多线程与线程池](https://wildma.github.io/blog/7ac296bb.html) 
 
 ## 设计模式
-  - [设计模式概括](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#%E4%B8%80%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%A6%82%E6%8B%AC) 
-- [设计模式六大原则](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#%E4%BA%8C%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%85%AD%E5%A4%A7%E5%8E%9F%E5%88%99)
-- [设计模式分类](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#%E4%B8%89%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%88%86%E7%B1%BB)
- - [单例模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#1-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F) 
- - [工厂方法模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#2-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F)
- - [抽象工厂模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#3-%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F)
- - [模板方法模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#4-%E6%A8%A1%E6%9D%BF%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F)
-  - [建造者模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#5-%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F)
-  - [代理模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#6-%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F)
-  - [装饰模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#7-%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F)
-  - [适配器模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#8-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F)
-  - [观察者模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#9-%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F)
-  - [责任链模式](https://github.com/wildma/AndroidNotes/blob/master/blogs/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md#10-%E8%B4%A3%E4%BB%BB%E9%93%BE%E6%A8%A1%E5%BC%8F)
+- [设计模式概括](https://wildma.github.io/blog/364ea8cc.html#toc-heading-1) 
+- [设计模式六大原则](https://wildma.github.io/blog/364ea8cc.html#toc-heading-2)
+- [设计模式分类](https://wildma.github.io/blog/364ea8cc.html#toc-heading-9)
+- [单例模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-10) 
+- [工厂方法模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-11)
+- [抽象工厂模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-12)
+- [模板方法模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-13)
+- [建造者模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-14)
+- [代理模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-15)
+- [装饰模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-18)
+- [适配器模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-19)
+- [观察者模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-22)
+- [责任链模式](https://wildma.github.io/blog/364ea8cc.html#toc-heading-25)
 
 
 ## 为什么要创建该仓库？
-我是一名 Android 开发者，从事 Android 开发这几年也有记笔记和写博客的习惯，但是博客的产量远远追不上记笔记的量，导致为知笔记里的笔记越来越多，而且都比较凌乱，最近一直想着抽个时间整理出来，所以就有了这个仓库。很多看过我博客的读者都说我写的文章通俗易懂，所以我会将笔记中的每个知识点整理成一篇篇文章，必要的还会配上 demo，而不是纯粹只是为了粘贴笔记，目的是为了大家能更好的理解。当然，也是为了以后自己能快速复习。如果对你有帮助，可以点个 star 收藏起来，我会持续更新的~
+我是一名 Android 开发者，从事 Android 开发这几年也有记笔记和写博客的习惯，但是博客的产量远远追不上记笔记的量，导致为知笔记里的笔记越来越多，而且都比较凌乱，最近一直想着抽个时间整理出来，所以就有了这个仓库。很多看过我博客的读者都说我写的文章通俗易懂，所以我会将笔记中的每个知识点整理成一篇篇文章，必要的还会配上 demo，而不是纯粹只是为了粘贴笔记，目的是为了大家能更好的理解。当然，也是为了以后自己能快速复习。如果对你有帮助，可以点个 star 收藏起来，我会持续更新的~  
+ps：由于 Github 上文章侧边栏没有目录结构，对于长文阅读体验较差，所以文章全部迁移到我的个人博客：[wildma的博客](https://wildma.github.io/)，该仓库目前只放对应代码与文章分类。
 
 ## 其他
 - 由于笔者技术水平有限，若发现有内容错误或笔误的地方，欢迎提 issue 或 pull request 给我。
