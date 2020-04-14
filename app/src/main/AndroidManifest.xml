@@ -31,6 +31,12 @@
             android:name=".thread.ThreadActivity"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".thread.MultiThreadActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".thread.MultiThread2Activity"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".thread.ThreadPoolActivity"
             android:screenOrientation="portrait"/>
         <activity

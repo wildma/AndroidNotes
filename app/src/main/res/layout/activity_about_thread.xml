@@ -14,6 +14,16 @@
 
     <Button
         style="@style/CommonButton"
+        android:onClick="jumpToMultiThreadActivity"
+        android:text="多线程并发1"/>
+
+    <Button
+        style="@style/CommonButton"
+        android:onClick="jumpToMultiThread2Activity"
+        android:text="多线程并发2"/>
+
+    <Button
+        style="@style/CommonButton"
         android:onClick="jumpToThreadPoolActivity"
         android:text="四种线程池的使用"/>
 

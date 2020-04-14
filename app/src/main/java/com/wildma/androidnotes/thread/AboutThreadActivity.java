@@ -31,6 +31,14 @@ public class AboutThreadActivity extends BaseActivity {
         startActivity(new Intent(this, ThreadActivity.class));
     }
 
+    public void jumpToMultiThreadActivity(View view) {
+        startActivity(new Intent(this, MultiThreadActivity.class));
+    }
+
+    public void jumpToMultiThread2Activity(View view) {
+        startActivity(new Intent(this, MultiThread2Activity.class));
+    }
+
     public void jumpToThreadPoolActivity(View view) {
         startActivity(new Intent(this, ThreadPoolActivity.class));
     }
