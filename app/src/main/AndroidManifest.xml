@@ -51,6 +51,10 @@
         <activity
             android:name=".retrofit.RetrofitActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".eventbus.EventBusFirstActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".eventbus.EventBusSecondActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

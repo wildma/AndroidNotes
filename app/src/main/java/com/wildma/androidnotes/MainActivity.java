@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.wildma.androidnotes.base.BaseActivity;
+import com.wildma.androidnotes.eventbus.EventBusFirstActivity;
 import com.wildma.androidnotes.http.HttpActivity;
 import com.wildma.androidnotes.okhttp.OkHttpActivity;
 import com.wildma.androidnotes.retrofit.RetrofitActivity;
@@ -39,6 +40,10 @@ public class MainActivity extends BaseActivity {
 
     public void jumpToRetrofitActivity(View view) {
         startActivity(new Intent(this, RetrofitActivity.class));
+    }
+
+    public void jumpToEventBusFirstActivity(View view) {
+        startActivity(new Intent(this, EventBusFirstActivity.class));
     }
 
 }
