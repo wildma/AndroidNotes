@@ -12,6 +12,7 @@
 - [Glide 的执行流程源码解析](https://wildma.github.io/blog/71588abf.html)
 - [Glide 的缓存机制源码解析](https://wildma.github.io/blog/376183ad.html)
 - [EventBus 源码解析](https://wildma.github.io/blog/f53f7491.html)
+- [LeakCanary 源码解析](https://wildma.github.io/blog/c3a41673.html)
 
 ## 网络编程
 - [HttpClient 与 HttpURLConnection 使用详解](https://wildma.github.io/blog/ec018646.html) 
@@ -29,6 +30,7 @@
 - [Android 主流开源框架（六）Glide 的执行流程源码解析](https://wildma.github.io/blog/71588abf.html)
 - [Android 主流开源框架（七）Glide 的缓存机制](https://wildma.github.io/blog/376183ad.html)
 - [Android 主流开源框架（八）EventBus 源码解析](https://wildma.github.io/blog/f53f7491.html)
+- [Android 主流开源框架（八）LeakCanary 源码解析](https://wildma.github.io/blog/c3a41673.html)
 
 ## Java 并发
 - [线程、多线程与线程池](https://wildma.github.io/blog/7ac296bb.html) 
